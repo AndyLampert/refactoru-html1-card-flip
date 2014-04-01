@@ -1,0 +1,19 @@
+.secondary {
+  position: absolute;
+  top: 0;
+}
+
+.portfolio-item:hover {
+  -webkit-transform: rotateX(0deg) rotateY(180deg);
+  transform: rotateX(0deg) rotateY(0deg);
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+.portfolio-item {
+  -webkit-transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}

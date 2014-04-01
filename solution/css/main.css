@@ -1,0 +1,30 @@
+.primary, .secondary {
+  transition: -webkit-transform .5s;
+}
+
+.primary {
+  position: absolute;
+  transition: -webkit-transform .5s;
+}
+
+.secondary {
+  -webkit-transform: rotateY( -180deg );
+}
+
+.portfolio-item:hover .primary {
+  -webkit-transform: rotateY( 180deg );
+}
+
+.portfolio-item:hover .secondary {
+  -webkit-transform: rotateY( 0deg );
+}
+
+/*
+we want the primary which is on top to rotate 180
+we want to secondary to do the oposite
+start at 180 and go back to normal
+
+
+-180 to 0 or
+180 to 360
+*/
